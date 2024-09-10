@@ -24,6 +24,17 @@ public class MainActivity extends AppCompatActivity {
         Button btnrestar = findViewById(R.id.btnrestar);
         Button btnmultiplicar = findViewById(R.id.btnmultiplicar);
         Button btndividir = findViewById(R.id.btndividir);
+        Button btnsalir = findViewById(R.id.btnsalir);
+
+        btnsalir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Finalizar la actividad actual
+                finish();
+                // También puedes salir de la aplicación completamente si quieres
+                System.exit(0);
+            }
+        });
 
         // Operación de suma
         btnsumar.setOnClickListener(new View.OnClickListener() {
